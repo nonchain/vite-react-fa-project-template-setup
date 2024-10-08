@@ -1,0 +1,1 @@
+export type StoreHook<K> = <T>(selector: (state: K) => T) => T;
