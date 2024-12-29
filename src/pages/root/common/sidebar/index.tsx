@@ -7,7 +7,6 @@ import {
   SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
@@ -39,8 +38,10 @@ function RootSidebar() {
                     <SidebarNavLinkItem {...sidebarItem}>
                       <p>{sidebarItem.label}</p>
                     </SidebarNavLinkItem>
-                  ) : (
+                  ) : sidebarItem.type === "collapse" ? (
                     <SidebarCollapseItem {...sidebarItem} />
+                  ) : (
+                    sidebarItem.component
                   )}
                 </SidebarMenuItem>
               ))}

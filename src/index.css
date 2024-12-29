@@ -25,33 +25,6 @@
   src: url("@/assets/fonts/Estedad-Black.woff2");
 }
 
-/* PEYDA FONT FAMILY*/
-@font-face {
-  font-family: "PEYDA";
-  font-weight: 400;
-  src: url("@/assets/fonts/PeydaWeb-Regular.woff2");
-}
-@font-face {
-  font-family: "PEYDA";
-  font-weight: 500;
-  src: url("@/assets/fonts/PeydaWeb-Medium.woff2");
-}
-@font-face {
-  font-family: "PEYDA";
-  font-weight: 600;
-  src: url("@/assets/fonts/PeydaWeb-SemiBold.woff2");
-}
-@font-face {
-  font-family: "PEYDA";
-  font-weight: 700;
-  src: url("@/assets/fonts/PeydaWeb-Bold.woff2");
-}
-@font-face {
-  font-family: "PEYDA";
-  font-weight: 900;
-  src: url("@/assets/fonts/PeydaWeb-Black.woff2");
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
