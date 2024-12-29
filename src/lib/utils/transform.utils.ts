@@ -40,3 +40,19 @@ export function acceptOnlyNumberOnKeyPress(e: KeyboardEvent<HTMLInputElement>) {
     e.preventDefault();
   }
 }
+
+export function separateNumberDigits(number: number, showDigits = false) {
+  if (!number || isNaN(number)) return "0";
+  const _number = showDigits ? number.toFixed(2) : number.toFixed();
+  return (_number + "").replace(/\d(?=(\d{3})+$)/g, "$&,");
+}
+
+export function summarizeTheNumber(number: number) {
+  if (!number || isNaN(number)) return "0";
+  if (number > 1e12) return `${(number / 1e12).toFixed(2)} T`;
+  if (number > 1e9) return `${(number / 1e9).toFixed(2)} B`;
+  if (number > 1e6) return `${(number / 1e6).toFixed(2)} M`;
+  if (number > 1e3) return `${(number / 1e3).toFixed(1)} K`;
+
+  return number.toFixed();
+}

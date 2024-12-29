@@ -11,9 +11,12 @@ export const ROUTES = {
   },
   main: {
     root: "/",
+    products: "/products",
+    productDetails: "/product/:productId",
   },
-  profile: {
-    root: `/profile/:userId`,
+  user: {
+    profile: "/profile",
+    setting: "/setting",
   },
 };
 

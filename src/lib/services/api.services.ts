@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import { BASE_URL } from "../constants/urls.constant";
+import { BASE_URL } from "../constants/endpoints.constant";
 import axios, { AxiosError, AxiosInstance, AxiosRequestConfig } from "axios";
 import { authStore } from "@/lib/store/auth/authStore";
 import Providers from "@/providers";

@@ -1,5 +1,5 @@
 import { QUERY_KEYS } from "@/lib/constants/query-keys.constant";
-import { END_POINTS } from "@/lib/constants/urls.constant";
+import { END_POINTS } from "@/lib/constants/endpoints.constant";
 import api from "@/lib/services/api.services";
 import { UserApi, UserErrorApi } from "@/lib/types/api.type";
 import { useQuery } from "@tanstack/react-query";
